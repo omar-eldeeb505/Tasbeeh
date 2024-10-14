@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/islamicTV"
+        android:layout_width="212dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:textSize="31.20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="31.20dp"
+        android:text="@string/islamic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/seb_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head_sebha_logo"
+        app:layout_constraintBottom_toBottomOf="@id/seb_body"
+        app:layout_constraintEnd_toEndOf="@id/seb_body"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="@id/seb_body"
+        app:layout_constraintTop_toBottomOf="@id/islamicTV"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/seb_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/body_sebha_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/islamicTV" />
+
+    <TextView
+        android:id="@+id/tabeh_countTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/seb_body"
+        app:layout_constraintEnd_toEndOf="@id/seb_body"
+        app:layout_constraintTop_toBottomOf="@id/seb_body"
+        android:text="@string/tasbehCount"
+        android:textSize="31.20sp"
+        />
+
+    <TextView
+        android:id="@+id/tasbeh_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@id/tabeh_countTV"
+        app:layout_constraintEnd_toEndOf="@id/tabeh_countTV"
+        app:layout_constraintTop_toBottomOf="@id/tabeh_countTV"
+        android:textSize="39dp"
+        />
+
+    <TextView
+        android:id="@+id/zikr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gold"
+        android:padding="6.50dp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tasbeh_count"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tasbeh_count"
+        app:layout_constraintTop_toBottomOf="@id/tasbeh_count"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
